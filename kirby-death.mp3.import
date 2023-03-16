@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/kirby-death.mp3-359f7d75b38682676a3b752a9541f040.mp3str"
+
+[deps]
+
+source_file="res://kirby-death.mp3"
+dest_files=[ "res://.import/kirby-death.mp3-359f7d75b38682676a3b752a9541f040.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

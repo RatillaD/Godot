@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/kingboolau_3db779295295365.mp3-1fce43856ae460f95c5f564eacc96aa4.mp3str"
+
+[deps]
+
+source_file="res://kingboolau_3db779295295365.mp3"
+dest_files=[ "res://.import/kingboolau_3db779295295365.mp3-1fce43856ae460f95c5f564eacc96aa4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Captura de pantalla 2023-03-02 202924.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.17145, 58.4596 )
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2( -356.083, 196.309 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -16.3909, -29.1095 )
+shape = SubResource( 1 )
+
+[node name="CapturaDePantalla2023-03-02202924" type="Sprite" parent="."]
+position = Vector2( -16.2981, -29.0839 )
+scale = Vector2( 0.303899, 1.4382 )
+texture = ExtResource( 1 )

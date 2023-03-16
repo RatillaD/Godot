@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mario-bros-jump.mp3-e2b913aefca134b66e86b45ee3263fff.mp3str"
+
+[deps]
+
+source_file="res://mario-bros-jump.mp3"
+dest_files=[ "res://.import/mario-bros-jump.mp3-e2b913aefca134b66e86b45ee3263fff.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

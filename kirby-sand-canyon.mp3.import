@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/kirby-sand-canyon.mp3-d74ff0f6055afaded3d68e6cf99039ac.mp3str"
+
+[deps]
+
+source_file="res://kirby-sand-canyon.mp3"
+dest_files=[ "res://.import/kirby-sand-canyon.mp3-d74ff0f6055afaded3d68e6cf99039ac.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
