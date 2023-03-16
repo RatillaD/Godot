@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://kirby.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Captura de pantalla 2023-03-02 202924.png" type="Texture" id=2]
@@ -70,9 +70,6 @@ extents = Vector2( 56.2191, 11.2005 )
 
 [sub_resource type="RectangleShape2D" id=54]
 extents = Vector2( 25.7715, 9.51831 )
-
-[sub_resource type="RectangleShape2D" id=57]
-extents = Vector2( 4.59195, 86.7691 )
 
 [node name="Flappyg3" type="Sprite"]
 position = Vector2( 20535.5, -2893 )
@@ -170,7 +167,7 @@ scale = Vector2( 0.24628, 0.96766 )
 texture = ExtResource( 3 )
 
 [node name="kirby" parent="." instance=ExtResource( 1 )]
-position = Vector2( -490.467, -50.4463 )
+position = Vector2( 290.245, -47.9202 )
 
 [node name="SotaTerra2023-03-02214134" type="Sprite" parent="."]
 position = Vector2( -0.444687, 510.499 )
@@ -1464,10 +1461,6 @@ text = "w --> salt
 A,D --> esquerra, dreta
 S --> encongirse
 E --> resar"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 352.789, 140.507 )
-shape = SubResource( 57 )
 
 [connection signal="body_entered" from="StaticBody2D12/castell" to="." method="_on_castell_body_entered"]
 [connection signal="body_entered" from="Area2D" to="kirby" method="_on_Area2D_body_entered"]
