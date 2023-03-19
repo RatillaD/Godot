@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://kirby.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Captura de pantalla 2023-03-02 202924.png" type="Texture" id=2]
@@ -54,7 +54,7 @@ extents = Vector2( 1.50469, 16.2215 )
 extents = Vector2( 759.891, 12.8151 )
 
 [sub_resource type="RectangleShape2D" id=49]
-extents = Vector2( 63.8175, 65.9544 )
+extents = Vector2( 66.3243, 66.1985 )
 
 [sub_resource type="RectangleShape2D" id=50]
 extents = Vector2( 6.53308, 9.59299 )
@@ -70,6 +70,12 @@ extents = Vector2( 56.2191, 11.2005 )
 
 [sub_resource type="RectangleShape2D" id=54]
 extents = Vector2( 25.7715, 9.51831 )
+
+[sub_resource type="RectangleShape2D" id=57]
+extents = Vector2( 8.9194, 67.9762 )
+
+[sub_resource type="RectangleShape2D" id=58]
+extents = Vector2( 10, 72.0394 )
 
 [node name="Flappyg3" type="Sprite"]
 position = Vector2( 20535.5, -2893 )
@@ -167,7 +173,7 @@ scale = Vector2( 0.24628, 0.96766 )
 texture = ExtResource( 3 )
 
 [node name="kirby" parent="." instance=ExtResource( 1 )]
-position = Vector2( 290.245, -47.9202 )
+position = Vector2( -487.401, -36.897 )
 
 [node name="SotaTerra2023-03-02214134" type="Sprite" parent="."]
 position = Vector2( -0.444687, 510.499 )
@@ -894,7 +900,7 @@ texture = ExtResource( 5 )
 position = Vector2( 717.915, 110.385 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="muntanya"]
-position = Vector2( -26.9543, 23.7214 )
+position = Vector2( -30.4769, 23.3094 )
 scale = Vector2( 0.695151, 1.68772 )
 shape = SubResource( 49 )
 
@@ -1439,10 +1445,10 @@ scale = Vector2( 1.75242, 6.0125 )
 texture = ExtResource( 6 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = -502.881
-margin_top = 14.7741
-margin_right = -407.881
-margin_bottom = 363.774
+margin_left = -501.026
+margin_top = 23.118
+margin_right = -406.026
+margin_bottom = 372.118
 custom_colors/default_color = Color( 0.00392157, 0, 0, 1 )
 text = "Espai --> saltar"
 __meta__ = {
@@ -1450,13 +1456,25 @@ __meta__ = {
 "
 }
 
+[node name="Area2D27" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D27"]
+position = Vector2( 369.646, 9.18597 )
+shape = SubResource( 57 )
+
+[node name="StaticBody2D13" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D13"]
+position = Vector2( 377.362, 147.824 )
+shape = SubResource( 58 )
+
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-margin_left = 373.628
-margin_top = 17.0706
-margin_right = 528.628
-margin_bottom = 97.0706
+margin_left = 381.0
+margin_top = -11.0
+margin_right = 534.0
+margin_bottom = 80.0
 custom_colors/default_color = Color( 0.0509804, 0.00392157, 0.00392157, 1 )
-tab_size = 2
+tab_size = 14
 text = "w --> salt
 A,D --> esquerra, dreta
 S --> encongirse
@@ -1489,3 +1507,4 @@ E --> resar"
 [connection signal="body_entered" from="Area2D24" to="kirby" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D25" to="kirby" method="_on_Area2D25_body_entered"]
 [connection signal="body_entered" from="Area2D26" to="kirby" method="_on_Area2D26_body_entered"]
+[connection signal="body_entered" from="Area2D27" to="kirby" method="_on_Area2D27_body_entered"]

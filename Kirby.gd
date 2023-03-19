@@ -15,6 +15,7 @@ var Visible = visible
 onready var nubol = $"../Area2D25"
 onready var musica_fons =$"../musica"
 
+
 var Desplacament := Vector2.ZERO
 var Moviment := Vector2. ZERO
 var Gravetat := Vector2.DOWN * 1400
@@ -59,7 +60,6 @@ func escenari_general_abans247(delta):
 		moviment += desplacament.normalized() * velocitat
 		moviment = move_and_slide(moviment, Vector2.UP) 
 	else:
-		
 		if morint == false:
 			get_node("salt").stop()
 			animatedSprite.play("mort final")
@@ -71,7 +71,10 @@ func escenari_general_abans247(delta):
 			get_node("mort kirby").play()
 			
 			morint = true
-			
+			if morint == true:
+#				kirby.position = Vector2 (-703, 9)
+				var text = $RichTextLabel
+				text.visible = true
 				
 func escenari_general_after347(delta):
 	animatedSprite.visible = false
@@ -142,7 +145,7 @@ func actualitza_direccio(moviment):
 
 func _on_Area2D_body_entered(body):
 	if body.name == ("kirby"):
-		position.x = 367
+		position.x = 407
 		
 
 
@@ -161,3 +164,8 @@ func _on_Area2D26_body_entered(body):
 
 func _on_mort_kirby_finished():
 	position.x = -490
+
+
+func _on_Area2D27_body_entered(body):
+	if body.get_name() == "kirby":
+		body.position = Vector2 (407, 165)
